@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tailor assist, votre styliste au bout du clic</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-light" style="background-color: #fff">
+            <a class="navbar-brand" href="explore.php">
+                <img src="./img/ModelSkwad_logo.png" style="width: 150px;">
+            </a>
+
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link"  href="./explore.html"> Explorer les collections </a></li>
+            <!-- <li class="nav-item"><a class="nav-link"  href="registration.php">Créer un compte </a></li>
+                <li class="nav-item"><a class="nav-link"  href="" data-toggle="modal" data-target="#loginModal"> Se Connecter </a></li> -->
+            </ul>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link"  href="registration.php">Créer un compte </a></li>
+                <li class="nav-item"><a class="nav-link"  href="" data-toggle="modal" data-target="#loginModal"> Se Connecter </a></li>
+            </ul>
+        </nav>
+        <div class="headline text-center" style="position: relative;top: 140px;">
+            <h1> Le sur mesure n'a jamais été aussi simple</h1>
+        </div>  
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- <img src="/img/clarke-sanders-249798-unsplash-1366.jpg"> -->
+
+        </div>
+    </div>
+    <!-- modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body" style="padding: 0;">
+                    <div class="col-md-12">
+                        <div class="row content-wrapper">
+                            <div class="col-lg-5 col-md-5" style="padding: 2em">
+                                <div class="row">
+                                    <div href="navbar-brand">
+                                        <img class="img-fluid" src="./img/ModelSkwad_logo.png" style="height: 45px" >
+                                    </div>
+                                    <h3> We are ModelSkwad</h3>
+                                    <span>Bienvenue dans la nouvelle ère digitale</span>
+                                    <br>
+                                </div>
+                                <div class="row">
+                                    <div class="" style="margin-top: 25%">
+                                        <form class="form-vertical" action="login.php" method="POST" >
+                                            <div class="form-group">
+                                                <label for="username">Login</label>
+                                                <input type="text" class="form-control" name="username" id="username">
+                                            </div>
+                                            <div class="form-group">
+                                                <label> mot de passe </label>
+                                                <input type="password" class="form-control" name="password" id="user_password">
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="isRemember" name="">
+                                                <label> Se souvenir de moi </label>
+                                            </div>
+                                            <button type="submit" class="btn btn-default btn-primary"> Connexion</button>&nbsp;
+                                            <a href="/registration.php"><button class="btn btn-default"> Créer un compte</button>	</a>
+                                        </form>
+
+                                    </div>
+                                    <div class="col">
+                                        <a href="" style="margin-top: 30px">Mot de passe oublié ?</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 col-md-7" style="background-image :url(img/bobby-rodriguezz-624270-unsplash.jpg); height: 90vh;background-size: cover;background-position: 0px -15px;background-repeat: no-repeat;">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end modal -->
+    <div class="hero"></div>
+
+    <div class="container-fluid" style="display: flex; justify-content: center;">
+        <!-- How it Works -->
+        <section id="howItWorks-wrapper">
+            <div class="row">
+                <div class="col-7 step-wrapper">
+                    <span class="howItWorks-number">1</span>
+                    <h1>Consulte les Modèles</h1>
+                    <p> Lorem ipsums icsks iclcscsijc </p>
+                </div>
+                <div class="col">
+                    <img class="how-it-work-img" src="./img/VliscoWaxWaxHomeDesktop.jpg">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-7">
+                    <img class="how-it-work-img" src="./img/samantha-sophia-210756-min.jpg">
+                </div>
+                <div class="col step-wrapper">
+                    <span class="howItWorks-number">2</span>
+                    <h1>Programme un rendez vous </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col step-wrapper">
+                    <span class="howItWorks-number">3</span>
+                    <h1>Reçois ton Modèle sur mesure </h1>
+                </div>
+                <div class="col-4">
+                    <img class="how-it-work-img" src="./img/thought-catalog-547018-unsplash.jpg">
+                </div>
+
+            </div>
+        </section>
+        <!-- Explore Models -->
+        <section class="" style="margin: 50px;">
+            <ul class="explore-filters">
+                <li class="active"><a href="">Femmes</a></li>
+                <li><a href="">Hommes</a></li>
+            </ul>
+            <div class="masonry">
+                <div class="masonry-brick">
+                    <img class="masonry-brick-img" src="./img/looks/2.jpeg">
+                </div>
+                <div class="masonry-brick">
+                    <img class="masonry-brick-img" src="./img/looks/4.jpeg">
+                </div>
+                <div class="masonry-brick">
+                    <img class="masonry-brick-img" src="./img/looks/5.jpeg">
+                </div>
+                <div class="masonry-brick">
+                    <img class="masonry-brick-img" src="./img/looks/6.jpeg">
+                </div>
+                <div class="masonry-brick">
+                    <img class="masonry-brick-img" src="./img/looks/7.jpeg">
+                </div>
+                <div class="masonry-brick">
+                    <img class="masonry-brick-img" src="./img/looks/8.jpeg">
+                </div>
+                <div class="masonry-brick">
+                    <img class="masonry-brick-img" src="./img/looks/9.jpeg">
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col">
+                    <!-- <p>djdjdjd</p> -->
+                    <a href="./explore.html"><button class="btn btn-primary btn-lg btn-block" style="background-color: #2c04ced9; margin-top: 30px;"> Découvir plus de collections</button></a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>    
+        <div class="footer-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="img/ModelSkwad_logo.png" style="width: 150px;">
+                        <div>
+                            <p> The market place For fashion addict</p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Le Concept</h5>
+                        <ul>
+                            <li><a href="">Comment ça marche</a> </li>
+                            <li><a href="">Tester le concept</a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>L'entreprise</h5>
+                        <ul>
+                            <li><a href="">Devenir partenaire</a> </li>
+                            <li><a href="">L'équipe</a>  </li>
+                            <li><a href="">Notre Vision</a> </li>
+                            <li><a href="">Nous Rejoindre</a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Partenaires</h5>
+                        <ul>
+                            <li> Devenir partenaire</li>
+                            <li></li>
+                        </ul>
+                    </div>                  
+                </div>
+            </div>          
+        </div>
+        <div class="footer-socials"> 
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <p>© 2018 ModelSkwad. Tous droits résevés.</p>
+                    </div>                  
+                </div>
+            </div>
+            
+        </div>  
+    </footer>    
+    <script type="text/javascript" src="./vendor/jquery/jquery.js"></script>
+    <script type="text/javascript" src="./vendor/bootstrap/bootstrap.js"></script>
+</body>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    	<title>Tailor assist, votre styliste au bout du clic</title>
+    	<meta charset="utf-8">
+    	<link rel="stylesheet" type="text/css" href="./css/main.css">
+    	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+  </head>
+  <body>
+     <header>
+        <nav class="navbar fixed-top navbar-light" style="background-color: #fff">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./img/ModelSkwad_logo.png" style="width: 150px;">
+            </a>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link"  href="#">Créer un compte </a></li>
+                <li class="nav-item"><a class="nav-link"  href="#" data-toggle="modal" data-target="#loginModal"> Se Connecter </a></li>
+            </ul>
+        </nav>
+        <!-- modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body" style="padding: 0;">
+                    <div class="col-md-12">
+                        <div class="row content-wrapper">
+                            <div class="col-lg-5 col-md-5" style="padding: 2em">
+                                <div class="row">
+                                    <div href="navbar-brand">
+                                        <img class="img-fluid" src="./img/ModelSkwad_logo.png" style="height: 45px" >
+                                    </div>
+                                    <h3> We are ModelSkwad</h3>
+                                    <span>Bienvenue dans la nouvelle ère digitale</span>
+                                    <br>
+                                </div>
+                                <div class="row">
+                                    <div class="" style="margin-top: 25%">
+                                        <form class="form-vertical" action="login.php" method="POST" >
+                                            <div class="form-group">
+                                                <label for="username">Login</label>
+                                                <input type="text" class="form-control" name="username" id="username">
+                                            </div>
+                                            <div class="form-group">
+                                                <label> mot de passe </label>
+                                                <input type="password" class="form-control" name="password" id="user_password">
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="isRemember" name="">
+                                                <label> Se souvenir de moi </label>
+                                            </div>
+                                            <button type="submit" class="btn btn-default btn-primary"> Connexion</button>&nbsp;
+                                            <a href="/registration.php"><button class="btn btn-default"> Créer un compte</button> </a>
+                                        </form>
+
+                                    </div>
+                                    <div class="col">
+                                        <a href="" style="margin-top: 30px">Mot de passe oublié ?</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 col-md-7" style="background-image :url(img/bobby-rodriguezz-624270-unsplash.jpg); height: 90vh;background-size: cover;background-position: 0px -15px;background-repeat: no-repeat;">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end modal -->
+        <div class="headline text-center">
+            <h1>Bienvenue </h1>
+        </div>
+    </header>
+    	<div class="container-fluid">
+    		<div class="row body--content">
+          <div class="col-md-2">
+            <div class="selector-wrapper">
+                <div class="selector-item">
+                  <img class="selector-item-icons" src="./img/icons/Shirt_64px.png">
+                  <p class="selector-item-text">Chemises </p>
+                </div>
+                <div class="selector-item">
+                  <img class="selector-item-icons" src="./img/icons/Skirt_32px.png">
+                  <p class="selector-item-text">jupes </p>
+                </div>
+                <div class="selector-item">
+                  <img class="selector-item-icons" src="./img/icons/Wedding Dress_32px.png">
+                  <p class="selector-item-text">Robes </p>
+                </div>
+                <div class=" selector-item">
+                  <img class="selector-item-icons" src="./img/icons/Shorts_32px.png">
+                  <p class="selector-item-text">Culottes </p>
+                </div>
+                <div class=" selector-item">
+                  <img class="selector-item-icons" src="./img/icons/Trousers_32px.png">
+                  <p class="selector-item-text">Pantalons </p>
+                </div>
+                <div class=" selector-item">
+                  <img class="selector-item-icons" src="./img/icons/Jacket_32px.png">
+                  <p class="selector-item-text">Vestes </p>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-10">
+            <div class=" ">  
+              <div class="row">
+                <h1 class="text-center"> Coucou Bella!</h1><br>
+                
+              </div>
+              <div class="row">
+
+                <div id="models-wrapper" style="width: 100%"> 
+                  <div>
+                    <h2>Regarde les nouvelles tendances de ce mois</h2>
+
+                    <ul id="model-list" style="display: flex;flex-direction: row;justify-content: space-evenly;">
+
+                        <li class="model-list-item">
+                          <a href="./Collection/model.html">
+                          <img class="" src="./img/looks/3.jpeg">                          
+                           <span>
+                             <p>Oldies pants</p>
+                             <p class="model-list-item__price">12.000 FCFA</p>
+                             <a href="./Collection/model.html"><img class="order" src="./img/icons/Sewing Machine_64px.png"></a> 
+                           </span>
+                           </a> 
+                        </li>
+                        <li class="model-list-item">
+                          <a href="./Collection/model.html">
+                            <img class="" src="./img/looks/4.jpeg">                          
+                           <span>
+                             <p>Combinaison Choco</p>
+                             <p class="model-list-item__price">17.500 FCFA</p>
+                             <a href="./Collection/model.html"><img class="order" src="./img/icons/Sewing Machine_64px.png"></a> 
+                           </span>
+                           </a>
+                        </li> 
+                        <li class="model-list-item">
+                          <a href="./Collection/model.html">
+                            <img class="" src="./img/looks/5.jpeg">                          
+                           <span>
+                             <p>Princesse Ashanti</p>
+                             <p class="model-list-item__price">18.000 FCFA</p>
+                             <a href="./Collection/model.html"><img class="order" src="./img/icons/Sewing Machine_64px.png"></a> 
+                           </span>
+                           </a>
+                        </li> 
+                        <li class="model-list-item">
+                          <a href="./Collection/model.html">
+                            <img class="" src="./img/looks/8.jpeg">                          
+                           <span>
+                             <p>Robe Chic </p>
+                             <p class="model-list-item__price">15.000 FCFA</p>
+                             <a href="./Collection/model.html"><img class="order" src="./img/icons/Sewing Machine_64px.png"></a> 
+                           </span>
+                           </a>
+                        </li>                      
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+              <div> 
+                <h2>Collections à venir</h2>
+              </div>
+              <!-- Collection a venir -->
+              <section>
+                 <ul id="featured-model-list" style="">
+                    <li class="featured-model-list-item">
+                       <img class="" src="./img/looks/6.jpeg">
+                       <a href="">
+                        <span>Josie Fox </span>
+                        <p> Franco togolese</p>
+                      </a>                
+                    </li>
+                    <li class="featured-model-list-item">
+                       <img class="" src="./img/looks/7.jpeg">
+                       <a href="">
+                        <span>Josie Fox </span>
+                        <p> Franco togolese</p>
+                      </a>                
+                    </li>
+                    <li class="featured-model-list-item">                   
+                       <img class="" src="./img/looks/8.jpeg">
+                       <a href="">
+                        <span>Ella Ramos</span>
+                        <p> Franco togolese</p>
+                      </a>
+                    </li>
+                    <li class="featured-model-list-item">
+                       <img class="" src="./img/looks/9.jpeg">
+                       <a href="">
+                        <span>Bernas</span>
+                        <p> Franco togolese</p>
+                      </a>
+                    </li>
+                </ul>
+              </section>
+              <!-- Top tendances -->
+              <div> 
+                <h2>Les Incontournables  du moment !</h2>
+              </div>
+              <section>
+                   <ul id="featured-model-list" style="">
+                  <li class="featured-model-list-item">
+                       <img class="" src="./img/looks/2.jpeg">
+                       <a href="">
+                        <span>Josie Fox </span>
+                        <p> Franco togolese</p>
+                      </a>                
+                    </li>
+                    <li class="featured-model-list-item">
+                       <img class="" src="./img/looks/3.jpeg">
+                       <a href="">
+                        <span>Josie Fox </span>
+                        <p> Franco togolese</p>
+                      </a>                
+                    </li>
+                    <li class="featured-model-list-item">                   
+                       <img class="" src="./img/looks/4.jpeg">
+                       <a href="">
+                        <span>Ella Ramos</span>
+                        <p> Franco togolese</p>
+                      </a>
+                    </li>
+                    <li class="featured-model-list-item">
+                       <img class="" src="./img/looks/5.jpeg">
+                       <a href="">
+                        <span>Bernas</span>
+                        <p> Franco togolese</p>
+                      </a>
+                    </li>
+                </ul>
+              </section>       
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script type="text/javascript" src="./vendor/jquery/jquery.js"></script>
+    <script type="text/javascript" src="./vendor/bootstrap/bootstrap.js"></script>
+</body>
+</html>
